@@ -1,0 +1,31 @@
+.career{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:top center;
+  @media(max-width: 1023px){
+    height: 300px;
+    margin-bottom: 200px;
+  }
+
+  @media(max-width: 767px){
+    margin-bottom: 767px;
+    padding: 20px 0;
+    background-position: top right 29%;
+  }
+  
+  &__header{
+    color: white;
+    text-align: left;
+  }
+  &__items{
+    position: relative;
+    top: 171px;
+    @media(max-width: 1023px){
+      top: -31px;
+    }
+    @media(max-width: 767px){
+      top: 32px;
+    }
+    
+  }
+}

@@ -1,0 +1,50 @@
+.content-banner{
+  blockquote{
+    border-left: 3px solid #F63;
+background: #EBEBEB;
+padding: 18px 30px;
+margin: 25px 0;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .banner-item {
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: 1023px) {
+      background-image: none !important
+    }
+    &__content{
+      @media (max-width: 1023px) {
+        width: 100%;
+        padding: 50px 0;
+      }
+    }
+    &__mobile-banner{
+      @media (min-width: 1023px) {
+        display: none;
+      }
+      overflow: hidden;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+          width: 100%;
+        @media (max-width: 767px) {
+          width: 200%;
+          max-width: none;
+        }
+      }
+      }
+      
+    
+  }
+
+}

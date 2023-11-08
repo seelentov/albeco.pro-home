@@ -1,0 +1,167 @@
+.tables {
+  padding: 115px 0;
+  // .tables__header
+  @media (max-width: 1023px) {
+    padding: 60px 0;
+  }
+  &__header {
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+
+  // .tables__desc
+
+  &__desc {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  // .tables__items
+
+  &__items {
+    display: flex;
+
+    @media (max-width: 767px) {
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+}
+
+.count {}
+
+.text-header {}
+
+.tables-item {
+  margin-right: 25px;
+
+  @media (max-width: 767px) {
+    margin: 0
+  }
+
+
+  tr {
+    display: block;
+  }
+
+  th {
+    font-size: 24px;
+    text-align: left;
+    padding: 16.5px 25px;
+    height: 88px;
+
+    @media (max-width: 1023px) {
+      font-size: 16px;
+      padding: 10.5px 25px 16.5px 25px;
+      height: 69px;
+    }
+  }
+
+
+  td {
+    display: block;
+    padding: 16.5px 25px;
+
+    border-bottom: #DFDFDF 1px dashed;
+    height: 60px;
+
+    @media (max-width: 1023px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+
+  tr:last-of-type {
+
+    td,
+    p {
+      color: #000000;
+      font-weight: 700;
+      border-bottom: none;
+    }
+  }
+}
+
+.tables-item--simple {
+  width: 33%;
+
+  td {
+    color: #999;
+  }
+}
+
+.tables-item--white {
+  width: 33%;
+  border-radius: 10px;
+  background: #FFF;
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08), 0px 0px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.tables-item--green {
+  width: 33%;
+  border-radius: 10px;
+  border: 1px solid #76C869;
+  background: #F1F7F0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08), 0px 0px 4px 0px rgba(0, 0, 0, 0.04);
+
+  th,
+  td {
+    color: #76C869 !important;
+  }
+}
+
+
+
+.tables-item {
+  &-1 {
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
+
+  &-2 {
+    p {
+      display: none;
+      color: #999;
+    }
+
+    @media (max-width: 1023px) {
+      width: 50%;
+
+      p {
+        display: block;
+      }
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  &-3 {
+    p {
+      display: none;
+      color: #999;
+    }
+
+    @media (max-width: 1023px) {
+      width: 50%;
+
+      p {
+        color: #76C869 !important;
+        display: block;
+      }
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+  
+    }
+  }
+
+  
+
+}

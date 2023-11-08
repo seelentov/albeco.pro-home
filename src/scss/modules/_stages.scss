@@ -1,0 +1,47 @@
+.stages {
+  padding: 115px 0 57px 0;
+
+  // .stages__container
+  
+  &__container {}
+  
+  // .stages__header
+  
+  &__header {
+    text-align: center;
+    margin-bottom: 75px;
+  }
+  
+  // .stages__items
+  
+  &__items {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media (max-width: 1023px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 767px) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    
+  }
+  }
+  .container {
+  }
+  .text-header {
+  }
+  .flex-item {
+  
+  // .flex-item__img
+  
+  &__img {}
+  
+  // .flex-item__desc
+  
+  &__desc {}
+  }
+  

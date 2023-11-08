@@ -1,0 +1,45 @@
+.team-stages {
+  padding: 115px 0;
+  @media (max-width:767px) {
+    padding: 50px 0;
+  }
+  &__items{
+    counter-reset: a;
+  }
+  &__items{
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    @media (max-width:1023px) {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+    @media (max-width:767px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  &__divider{
+    height: 1px;
+    width: 11%;
+    border: 1px dashed rgb(83 83 83 / 20%);
+    margin: 85px 0 0 0;
+    @media (max-width:1023px) {
+      display: block;
+      width: 11%;
+    }
+    @media (max-width:767px) {
+      display: none;
+    }
+    &--tablet{
+      
+      display: block;
+      @media (max-width:1000px) {
+        display: none;
+        
+      }
+    }
+  }
+}

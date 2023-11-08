@@ -1,0 +1,198 @@
+@import 'modules/_home.scss';
+@import 'modules/_footer.scss';
+@import 'modules/_header.scss';
+@import 'modules/_banner.scss';
+@import 'modules/_stages.scss';
+@import 'modules/_action.scss';
+@import 'modules/_offer.scss';
+@import 'modules/_content-banner.scss';
+@import 'modules/_tables.scss';
+@import 'modules/_team-stages.scss';
+@import 'modules/_career.scss';
+@import 'modules/_advantages.scss';
+@import 'modules/_reviews.scss';
+
+@import 'modules/_owlCarousel.scss';
+
+@import 'media.scss';
+@import 'mobile.scss';
+
+@import 'library/text.scss';
+@import 'library/items.scss';
+@import 'library/buttons.scss';
+@import 'library/forms.scss';
+@import 'library/checkbox.scss';
+@import 'library/inputs.scss';
+@import 'library/radios.scss';
+
+//=======================================================================
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+  width: 100%;
+  padding: 0 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1510px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 728px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+//=======================================================================
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  // Прижимаем footer
+  >main {
+    flex: 1 1 auto;
+  }
+
+  // Фикс для слайдеров
+  >* {
+    min-width: 0;
+  }
+}
+
+//=======================================================================
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(105, 105, 105);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(54, 54, 54);
+}
+
+//=======================================================================
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  // outline: none;
+}
+
+a:focus,
+a:active {
+  // outline: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #222;
+  line-height: 150%; /* 27px */
+  font-family: Fira Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  //text-rendering: optimizeLegibility;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @media (max-width: 1023px) {
+    font-size: 14px;
+  }
+}
+
+input,
+button,
+textarea {
+  color: #222;
+  line-height: 150%; /* 27px */
+  font-family: Fira Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  @media (max-width: 1023px) {
+    font-size: 14px;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+
+//=======================================================================
+
+@import 'fonts.scss';
+@import 'googlefonts.scss';
